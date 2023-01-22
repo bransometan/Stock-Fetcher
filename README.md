@@ -44,7 +44,7 @@ This simple project uses the IEX Cloud API to retrieve stock information, which 
     <br /> 
     11) stock.companyName > certain length is trim out and added ...
     <br /> 
-    12) One problem is GOOG image (from: `https://storage.googleapis.com/iex/api/logos/${symbol}.png`) is in rectangular shape (not in circular shape compared to other stocks image), have to input a seperate CSS styling to cater to this.
+    12) One problem is GOOG image (from: https://storage.googleapis.com/iex/api/logos/GOOG.png) is in rectangular shape (not in circular shape compared to other stocks image), have to input a seperate CSS styling to cater to this.
     <br /> 
     13) Uses fontawesome icon set for the down/up arrow (beside stock.change)
     <br /> 
