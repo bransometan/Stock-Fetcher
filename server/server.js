@@ -20,8 +20,15 @@ app.get('/api/stock', async (req, res) => {
         const stocks = responses.map((response, index) => {
             // Add a corresponding web link (stock image) and assign to each response.
             response.data.stockImage = `https://storage.googleapis.com/iex/api/logos/${tickers[index]}.png`;
-            return response.data;
-          });
+            return {
+                companyName: response.data.companyName,
+                latestPrice: response.data.latestPrice,
+                symbol: response.data.symbol,
+                change: response.data.change,
+                changePercent: response.data.changePercent,
+                stockImage: response.data.stockImage
+            }
+        });
         //Sends the stocks data as a json object to the client  
         res.json(stocks);
     } catch (error) {
@@ -29,6 +36,7 @@ app.get('/api/stock', async (req, res) => {
         res.json({ error: error.message });
     }
 });
+
 
 //Starts the Express app to listen on port 5000 and logs a message to the console to indicate that the server is running.
 app.listen(5000, () => console.log('Server listening on port 5000!'));
