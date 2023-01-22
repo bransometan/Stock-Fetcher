@@ -1,0 +1,75 @@
+.Stock-container {
+  display: flex;
+  flex-direction: column;
+  width: 2000px;
+
+}
+
+.flex_horz {
+  display: flex;
+  flex-direction: row;
+}
+
+.horz_line {
+  width: 20%;
+  height: 2px;
+  margin-left: 0; 
+  background-color: lightgray;
+}
+
+.Stock-logo {
+ padding-right: 20px;
+}
+
+.Stock-img {
+  max-width: 50px;
+  border-radius: 100%;
+  border: 5px solid lightgray;
+}
+
+.GOOG-logo {
+  max-width: 50px;
+  border-radius: 100%;
+  padding-top: 30%;
+  padding-bottom: 30%;
+  border: 5px solid lightgray;
+}
+
+.Stock-symbol {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Stock-company {
+  color: gray;
+  padding-top: 5%;
+}
+
+.Stock-symbolcompany {
+  width: 8%;
+}
+
+.Stock-latestprice {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5%;
+}
+
+.Stock-change {
+  color: red;
+  font-weight: bold;
+  width: 80px;
+}
+
+.ArrowDirection {
+  color: red;
+  padding-right: 2%;
+}
+
+.Stock-changepercent {
+  color: red;
+  font-weight: bold;
+}
+
+
+
